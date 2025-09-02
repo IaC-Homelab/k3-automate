@@ -1,5 +1,5 @@
 # Set hostnames: hostnamectl set-hostname k3-node-1
-
+---
 - name: Find matching node
   ansible.builtin.set_fact:
     curr_node: "{{ k3_nodes | selectattr('name', 'equalto', inventory_hostname) | first }}"
