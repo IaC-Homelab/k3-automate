@@ -5,11 +5,13 @@ Declarative Proxmox VM configuring + k3s cluster bootstrap with:
 - 🧅 Nginx instead of Traefik  
 - 📦 Rook-Ceph for storage  
 - 🤖 All powered by Ansible playbooks
+<br><br>
 
 ## Repo layout 🗂️
 - `group_vars/all/` – 🛠️ Cluster configuration. Variables used across all playbooks.
 - `inventory/` – 🧬 Auto-generated inventory based on `configuration.yml` in `group_vars/all/`.
 - `roles/` – ♻️ Reusable, self-contained Ansible roles.
+<br><br>
 
 ## Deployment
 ```bash
@@ -28,4 +30,5 @@ ansible-playbook 0300-install_k3.yml
 # 5. Pull kubeconfig to local machine
 ansible-playbook 0310-setup_local_env.yml
 ```
+<br>
 You now have a shiny k3s cluster running on Proxmox ✨—ready for apps, experiments, and occasional chaos.
