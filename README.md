@@ -7,13 +7,17 @@ Declarative Proxmox VM configuring + k3s cluster bootstrap with:
 - 🤖 All powered by Ansible playbooks
 <br><br>
 
+
 ## Repo layout 🗂️
 - `group_vars/all/` – 🛠️ Cluster configuration. Variables used across all playbooks.
 - `inventory/` – 🧬 Auto-generated inventory based on `configuration.yml` in `group_vars/all/`.
 - `roles/` – ♻️ Reusable, self-contained Ansible roles.
 <br><br>
 
+
 ## Deployment
+*If your using my [proxmox-automation](https://github.com/IaC-Homelab/proxmox-automate) repo to deploy your VMs, skip step 3 Preconfigure Proxmox VMs*
+
 ```bash
 # 1. Copy the template and edit the configs
 cp group_vars/all/configuration.yml.template group_vars/all/configuration.yml
