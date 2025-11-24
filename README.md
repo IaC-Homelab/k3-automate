@@ -1,5 +1,5 @@
 # k3-automate 🚀
-Declarative Proxmox VM provisioning + k3s cluster bootstrap with:
+Declarative Proxmox VM configuring + k3s cluster bootstrap with:
 
 - 🌊 MetalLB for load balancing  
 - 🧅 Nginx instead of Traefik  
